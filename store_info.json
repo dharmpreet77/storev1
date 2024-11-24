@@ -1,0 +1,126 @@
+{
+    "store_name": "Junaid Convenience Store",
+    "description": "Junaid Convenience Store is your one-stop shop for daily essentials, snacks, beverages, and household items. Located conveniently in Kamloops and Vancouver, we pride ourselves on exceptional customer service, competitive pricing, and a wide selection of products to meet your needs. Whether you're picking up a quick snack or shopping for essentials, we've got you covered.",
+    "branches": [
+        {
+            "branch_name": "Downtown Kamloops",
+            "location": {
+                "address": "789 Victoria St",
+                "city": "Kamloops",
+                "state": "BC",
+                "zip_code": "V2C 2B1",
+                "country": "Canada"
+            },  
+            "contact": {
+                "phone": "+1 (236) 338-0491",
+                "email": "info@junaidconveniencestore.com",
+                "website": "https://www.junaidconveniencestore.com"
+            },
+            "working_hours": {
+                "monday_to_friday": "8:00 AM - 10:00 PM",
+                "saturday": "9:00 AM - 11:00 PM",
+                "sunday": "10:00 AM - 9:00 PM"
+            }
+        },
+        {
+            "branch_name": "Vancouver Main",
+            "location": {
+                "address": "1234 Main Street",
+                "city": "Vancouver",
+                "state": "BC",
+                "zip_code": "V6B 1A1",
+                "country": "Canada"
+            },
+            "contact": {
+                "phone": "+1 (604) 555-1234",
+                "email": "vancouver@junaidconveniencestore.com",
+                "website": "https://www.junaidconveniencestore.com"
+            },
+            "working_hours": {
+                "monday_to_friday": "8:00 AM - 10:00 PM",
+                "saturday": "9:00 AM - 11:00 PM",
+                "sunday": "10:00 AM - 9:00 PM"
+            }
+        }
+    ],
+    "payment_methods": [
+        "Cash",
+        "Credit/Debit Cards (Visa, MasterCard, AMEX)",
+        "Contactless Payments (Google Pay, Apple Pay)",
+        "Gift Cards"
+    ],
+    "store_policies": {
+        "returns_exchanges": "Items can be returned or exchanged within 30 days of purchase with a valid receipt. Products must be unopened and in their original packaging.",
+        "refund_policy": "Refunds are processed within 7-10 business days upon approval. Refunds will only be issued to the original payment method. For cash transactions, refunds will be provided in cash for amounts under $50; amounts above will be refunded via cheque.",
+        "privacy_policy": "Your personal information is confidential and used only for processing transactions or enhancing your experience with our services.",
+        "customer_support": "Our team is available to assist you during store hours. You can reach us by phone or email."
+    },
+    "additional_information": {
+        "special_offers": {
+            "winter_offers": [
+                "Buy One Get One Free on Hot Beverages: Warm up this winter with our delicious hot beverages. Buy one and get another free!",
+                "10% Off on Winter Snacks: Enjoy cozy winter evenings with our selection of cookies, chips, and seasonal treats.",
+                "Free Hot Chocolate with Every $20 Purchase: Spend $20 or more and get a complimentary cup of hot chocolate on us!",
+                "Seasonal Gift Hampers (Starting at $19.99): Perfect for gifting! Get exclusive winter-themed gift hampers at discounted prices.",
+                "15% Off on Bulk Orders for Holiday Events: Planning a holiday party? Avail of 15% off on bulk orders of snacks, beverages, and more.",
+                "Winter Membership Perk: Members get an additional 5% discount on all purchases during the winter season.",
+                "Limited Edition Winter Products: Grab our special winter-only products before they sell out!",
+                "Spend $50 and Get a Free Winter-Themed Mug: A special thank-you gift for our valued customers. Spend $50 and take home a free winter mug!"
+            ]
+        },
+        "accessibility": "Wheelchair-accessible entrances and parking are available for your convenience.",
+        "parking": "Free parking is available on-site."
+    },
+    "membership_plans": {
+        "basic_membership": {
+            "price": "$9.99/year",
+            "benefits": [
+                "5% Discount on all purchases",
+                "Access to exclusive member-only offers",
+                "Priority customer support",
+                "Monthly newsletters with special promotions"
+            ]
+        },
+        "gold_membership": {
+            "price": "$19.99/year",
+            "benefits": [
+                "10% Discount on all purchases",
+                "Free delivery on phone orders (within city limits)",
+                "Early access to seasonal sales and promotions",
+                "Free gifts on special occasions (e.g., birthdays, anniversaries)"
+            ]
+        },
+        "platinum_membership": {
+            "price": "$49.99/year",
+            "benefits": [
+                "15% Discount on all purchases",
+                "Unlimited free delivery (within city limits)",
+                "Exclusive invitation to member-only events",
+                "Complimentary seasonal gift baskets",
+                "Dedicated account manager for personalized support"
+            ]
+        }
+    },
+    "faqs": [
+        {
+            "question": "Do you offer home delivery services?",
+            "answer": "Yes, we offer home delivery for select items. Please check our website for delivery zones and fees."
+        },
+        {
+            "question": "Can I place an order online?",
+            "answer": "Yes, you can place an order through our website or mobile app for in-store pickup or delivery."
+        },
+        {
+            "question": "Are there any loyalty programs available?",
+            "answer": "Yes, we have a loyalty program where you can earn points for every purchase. These points can be redeemed for discounts and exclusive offers."
+        },
+        {
+            "question": "Do you sell gift cards?",
+            "answer": "Yes, we offer gift cards that can be purchased in-store or online and used for any of our products."
+        },
+        {
+            "question": "Are pets allowed in the store?",
+            "answer": "Service animals are welcome in our store, but we kindly ask that other pets remain outside for the safety of our customers."
+        }
+    ]
+}
