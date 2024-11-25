@@ -19,7 +19,10 @@
         { "ProductID": "017", "ProductName": "Peanut Butter", "Weight": "500g", "Price": 4.49, "Category": "Pantry" },
         { "ProductID": "018", "ProductName": "Jam", "Weight": "400g", "Price": 3.49, "Category": "Pantry" },
         { "ProductID": "019", "ProductName": "Tea Bags", "Weight": "50 Pack", "Price": 4.99, "Category": "Beverages" },
-        { "ProductID": "020", "ProductName": "Coffee", "Weight": "250g", "Price": 5.99, "Category": "Beverages" }
+        { "ProductID": "020", "ProductName": "Coffee", "Weight": "250g", "Price": 5.99, "Category": "Beverages" },
+        { "ProductID": "021", "ProductName": "Trail Mix", "Weight": "300g", "Price": 4.49, "Category": "Snacks" },
+        { "ProductID": "022", "ProductName": "Pretzels", "Weight": "200g", "Price": 2.79, "Category": "Snacks" },
+        { "ProductID": "023", "ProductName": "Energy Bar", "Weight": "50g", "Price": 1.99, "Category": "Snacks" }
     ],
     "branches": [
         {
@@ -34,7 +37,10 @@
                 { "ProductID": "017", "AvailableStock": 15 },
                 { "ProductID": "018", "AvailableStock": 40 },
                 { "ProductID": "019", "AvailableStock": 70 },
-                { "ProductID": "020", "AvailableStock": 20 }
+                { "ProductID": "020", "AvailableStock": 20 },
+                { "ProductID": "021", "AvailableStock": 35 },
+                { "ProductID": "022", "AvailableStock": 50 },
+                { "ProductID": "023", "AvailableStock": 30 }
             ]
         },
         {
@@ -59,7 +65,10 @@
                 { "ProductID": "017", "AvailableStock": 25 },
                 { "ProductID": "018", "AvailableStock": 30 },
                 { "ProductID": "019", "AvailableStock": 60 },
-                { "ProductID": "020", "AvailableStock": 15 }
+                { "ProductID": "020", "AvailableStock": 15 },
+                { "ProductID": "021", "AvailableStock": 50 },
+                { "ProductID": "022", "AvailableStock": 45 },
+                { "ProductID": "023", "AvailableStock": 25 }
             ]
         }
     ]
