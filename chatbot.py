@@ -245,15 +245,43 @@ with tabs[7]:
         st.write(f"A: {faq['answer']}")
 
 def handle_special_queries(query):
-    if "complaint" in query.lower():
-        return "To register a complaint, please call +1 (236) 338-0491 or email info@junaidconveniencestore.com."
-    elif "lost and found" in query.lower():
-        return "For lost and found inquiries, visit the store or call +1 (236) 338-0491."
+    branches_context = "\n".join(
+        [
+            f"**{branch['branch_name']}**:\n"
+            f"- Address: {branch['location']['address']}, {branch['location']['city']}, {branch['location']['state']}, {branch['location']['zip_code']}, {branch['location']['country']}\n"
+            f"- Phone Number: {branch['contact']['phone']}\n"
+            f"- Email: {branch['contact']['email']}\n"
+            f"- Website: {branch['contact']['website']}\n"
+            for branch in store_info_data["branches"]
+        ]
+            )
+
+     # Lost and Found
+    if "lost and found" in query.lower():
+        return (
+            "For lost and found inquiries, visit the nearest store or contact us using the details below:\n\n"
+            f"{branches_context}\n"
+            "If you have found an item or money, please report it to the same contact."
+        )
+    
+    # Special Orders
     elif "special order" in query.lower():
         return (
-            "We offer special orders for events and bulk purchases. Contact us at info@junaidconveniencestore.com "
-            "or call us at +1 (236) 338-0491 for details."
+            "We offer special orders for events and bulk purchases. Please reach out to us using the contact details below:\n\n"
+            f"{branches_context}\n"
+            "You can also email us at info@junaidconveniencestore.com."
         )
+    
+    # Membership Plans
+    elif "membership" in query.lower():
+        plans = store_info_data["membership_plans"]
+        response = "Here are our membership plans:\n"
+        for plan, details in plans.items():
+            response += f"**{plan.replace('_', ' ').title()}** - {details['price']}\n"
+            response += "Benefits:\n"
+            for benefit in details["benefits"]:
+                response += f"- {benefit}\n"
+        return response
     elif "membership" in query.lower():
         plans = store_info_data["membership_plans"]
         response = "Here are our membership plans:\n"
@@ -273,11 +301,25 @@ def handle_special_queries(query):
             "**Vancouver Branch**:\n"
             "- Call: +1 (604) 555-1234\n"
             "- Address: 1234 Main Street, Vancouver, BC V6B 1A1\n\n"
-            "- Website: junaidconveniencestore.com\n\n"
-            "For email inquiries, reach out at info@junaidconveniencestore.com."
+            "For email inquiries, reach out at info@junaidconveniencestore.com or visit our Website: www.junaidconveniencestore.com \n\n"
+
              "Our friendly staff will be happy to assist you with your order."
 
         )
+    # Product Recommendation
+    elif "recommend" in query.lower():
+        query_keywords = query.lower().split()
+        recommended_products = []
+        for product in products_data["Products"]:
+            if any(keyword in product["ProductName"].lower() or product["Category"].lower() for keyword in query_keywords):
+                recommended_products.append(product)
+        if recommended_products:
+            response = "Here are some products you might like:\n"
+            for product in recommended_products[:5]:  # Limit to 5 recommendations
+                response += f"- {product['ProductName']} ({product['Category']}): ${product['Price']}\n"
+            return response
+        else:
+            return "No matching products found. Please refine your request."
     return None
 
 # General Chatbot Input Box at the Bottom
